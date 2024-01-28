@@ -1,0 +1,2 @@
+**To create Data Base**
+CREATE DATABASE <Data-Base-NAME>

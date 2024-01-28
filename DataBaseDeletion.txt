@@ -1,0 +1,2 @@
+**To delete data base**
+DROP DATABASE <DataBase-Name>
