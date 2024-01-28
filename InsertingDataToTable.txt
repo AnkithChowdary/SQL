@@ -1,0 +1,7 @@
+--USE keyword to select the particular Data Base--
+USE MyData;
+SELECT database();
+CREATE TABLE info(
+Name VARCHAR(20),
+Rollno INT
+);
