@@ -1,4 +1,4 @@
 We can create as many columns as we want by separating with columns
 USE <DATABASE-Name>
 CREATE TABLE <Table-Name>(<Name of the data <Data Type>
-);
+);df
