@@ -1,1 +1,2 @@
-dsfer
+**In SQL, both DESCRIBE and DESC are used to provide information about the structure of database objects**
+DESC or describe

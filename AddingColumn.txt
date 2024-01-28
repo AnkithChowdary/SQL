@@ -1,0 +1,2 @@
+ALTER TABLE <Table-Name>
+ADD COLUMN <COLUMN-Name> Default ____________(some default value for the specific column)

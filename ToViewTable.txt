@@ -1,0 +1,2 @@
+----To view the table-----
+SELECT * FROM <Table-Name> 

@@ -1,4 +1,12 @@
-We can create as many columns as we want by separating with columns
+**We can create as many columns as we want by separating with columns**
+**After the data type we can set it as NOT NULL 
 USE <DATABASE-Name>
 CREATE TABLE <Table-Name>(<Name of the data <Data Type>
-);
+); 
+
+EX:
+
+USE mydata;
+Create table concept(employee_Name varchar(15) ,AGE INT NOT NULL);
+INSERT INTO concept(employee_Name,AGE)
+VALUES('AN',20);

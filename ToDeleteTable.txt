@@ -1,0 +1,2 @@
+USE <DataBase-Name>
+DROP TABLE <TABLE-Name>
