@@ -1,2 +1,14 @@
 **In SQL, both DESCRIBE and DESC are used to provide information about the structure of database objects**
 DESC or describe
+
+mysql> DESC info
+    -> ;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| Name      | varchar(20) | YES  |     | NULL    |       |
+| Rollno    | int         | YES  |     | NULL    |       |
+| address   | varchar(10) | YES  |     | NO add  |       |
+| ID_Number | int         | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.01 sec)

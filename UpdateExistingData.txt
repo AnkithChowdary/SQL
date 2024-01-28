@@ -1,0 +1,14 @@
+ UPDATE info
+    -> SET address='nothing'
+    -> WHERE Name='YOGENDRA';
+    
+mysql> SELECT * FROM info
+    -> ;
++----------+--------+---------+-----------+
+| Name     | Rollno | address | ID_Number |
++----------+--------+---------+-----------+
+| Ankith   |     21 | NO add  |      NULL |
+| Ankith   |     21 | NO add  |      NULL |
+| Bhomraj  |     54 | NO add  |      NULL |
+| YOGENDRA |     24 | nothing |      NULL |
++----------+--------+---------+-----------+
