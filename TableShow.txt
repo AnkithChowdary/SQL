@@ -1,0 +1,16 @@
+
+mysql> SELECT * FROM anith
+    -> ;
++---------+-------+---------+
+| Name    | marks | place   |
++---------+-------+---------+
+| Person1 |    50 | noplace |
+| Person2 |    44 | place2  |
+| Person4 |    47 | Place3  |
++---------+-------+---------+
+mysql> SELECT Name,marks FROM anith WHERE place='Place3';
++---------+-------+
+| Name    | marks |
++---------+-------+
+| Person4 |    47 |
++---------+-------+
