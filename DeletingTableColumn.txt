@@ -1,0 +1,25 @@
+mysql> SELECT * FROM anith
+    -> ;
++---------+-------+---------+
+| Name    | marks | place   |
++---------+-------+---------+
+| Person1 |    50 | noplace |
+| Person2 |    44 | place2  |
+| Person3 |    46 | place3  |
+| Person4 |    47 | Place3  |
++---------+-------+---------+
+4 rows in set (0.00 sec)
+
+mysql> DELETE FROM anith
+    -> WHERE marks=46;
+
+
+mysql> SELECT * FROM anith
+    -> ;
++---------+-------+---------+
+| Name    | marks | place   |
++---------+-------+---------+
+| Person1 |    50 | noplace |
+| Person2 |    44 | place2  |
+| Person4 |    47 | Place3  |
++---------+-------+---------+
