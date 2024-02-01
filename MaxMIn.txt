@@ -1,0 +1,15 @@
+
+mysql> SELECT MAX(marks) AS TOP FROM anith;
++------+
+| TOP  |
++------+
+|   50 |
++------+
+1 row in set (0.00 sec)
+// I am using min function and giving alias name too
+mysql> SELECT MIN(marks) AS LEAST FROM anith;
++-------+
+| LEAST |
++-------+
+|    44 |
++-------+
