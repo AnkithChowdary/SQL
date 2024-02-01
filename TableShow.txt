@@ -14,3 +14,6 @@ mysql> SELECT Name,marks FROM anith WHERE place='Place3';
 +---------+-------+
 | Person4 |    47 |
 +---------+-------+
+
+
+Using UNIQUE then that value should be unique
