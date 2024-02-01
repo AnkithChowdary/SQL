@@ -1,0 +1,22 @@
+// Second parameter is for how many values you want after the decimal point
+
+SELECT ROUND(Taxable_Pay,2) AS taxable_Pay FROM employee;
+┌─────────────┐
+│ taxable_pay │
+├─────────────┤
+│ 21.35       │
+│ 19.45       │
+│ 40.82       │
+│ 33.29       │
+│ 19.0        │
+└─────────────┘
+SELECT ROUND(Taxable_Pay,3) AS taxable_Pay FROM employee;
+┌─────────────┐
+│ taxable_Pay │
+├─────────────┤
+│ 21.345      │
+│ 19.452      │
+│ 40.821      │
+│ 33.293      │
+│ 18.995      │
+└─────────────┘
