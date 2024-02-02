@@ -1,0 +1,6 @@
+mysql> SELECT LEFT('AnkithChowdaary',6);
++---------------------------+
+| LEFT('AnkithChowdaary',6) |
++---------------------------+
+| Ankith                    |
++---------------------------+
