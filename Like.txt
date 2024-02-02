@@ -1,0 +1,9 @@
+mysql> SELECT title,author_fname,author_lname FROM books WHRE author_fname LIKE '%Su%';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'author_fname LIKE '%Su%'' at line 1
+mysql> SELECT title,author_fname,author_lname FROM books WHERE author_fname LIKE '%Su%';
++------------------+--------------+--------------+
+| title            | author_fname | author_lname |
++------------------+--------------+--------------+
+| The Hunger Games | Suzanne      | Collins      |
++------------------+--------------+--------------+
+1 row in set (0.01 sec)
