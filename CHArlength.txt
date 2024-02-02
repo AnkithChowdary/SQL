@@ -1,0 +1,2 @@
+SELECT CHAR_LENGTH(str);
+returns the no of characters
