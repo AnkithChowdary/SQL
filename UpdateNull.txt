@@ -1,0 +1,25 @@
+mysql> SELECT * FROM Newtable;
++----------+-------------+------+
+| Name     | PhoneNumber | new  |
++----------+-------------+------+
+| Ankith   |  9390253245 | NULL |
+| Bhomraj  |  7877661867 | NULL |
+| Yogendra |  7995398225 | NULL |
++----------+-------------+------+
+3 rows in set (0.00 sec)
+
+mysql> UPDATE Newtable
+    -> SET new = 0
+    -> WHERE new IS NULL;
+Query OK, 3 rows affected (0.02 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql>
+mysql> SELECT * FROM Newtable;
++----------+-------------+------+
+| Name     | PhoneNumber | new  |
++----------+-------------+------+
+| Ankith   |  9390253245 |    0 |
+| Bhomraj  |  7877661867 |    0 |
+| Yogendra |  7995398225 |    0 |
++----------+-------------+------+
