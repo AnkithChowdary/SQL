@@ -4,3 +4,4 @@ mysql> SELECT LEFT('AnkithChowdaary',6);
 +---------------------------+
 | Ankith                    |
 +---------------------------+
+Same for right string
