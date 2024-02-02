@@ -1,0 +1,21 @@
+mysql> SELECT * FROM anith;
++---------+-------+---------+
+| Name    | marks | place   |
++---------+-------+---------+
+| Person1 |    50 | noplace |
+| Person2 |    44 | place2  |
+| Person4 |    47 | Place3  |
+
+mysql> UPDATE anith SET marks='45' where Name='Person2';
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM anith;
++---------+-------+---------+
+| Name    | marks | place   |
++---------+-------+---------+
+| Person1 |    50 | noplace |
+| Person2 |    45 | place2  |
+| Person4 |    47 | Place3  |
++---------+-------+---------+
+3 rows in set (0.00 sec)
