@@ -1,15 +1,14 @@
-ALTER TABLE <Table-Name>
-ADD COLUMN <COLUMN-Name> Default ____________(some default value for the specific column)
-mysql> ALTER TABLE newtable
-    -> ADD COLUMN ShortName VARCHAR(2);
-Query OK, 0 rows affected (0.05 sec)
-Records: 0  Duplicates: 0  Warnings: 0
+mysql> UPDATE newtable
+    -> SET ShortName = SUBSTR(FullName, 1, 2)
+    -> WHERE ShortName IS NULL;
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 3  Changed: 1  Warnings: 0
 
 mysql> SELECT * FROM newtable;
 +----------+-------------+------+-----------+-----------------+-----------+
 | Name     | PhoneNumber | new  | LastName  | FullName        | ShortName |
 +----------+-------------+------+-----------+-----------------+-----------+
-| Ankith   |  9390253245 |    0 | Choudhary | AnkithChoudhary | NULL      |
+| Ankith   |  9390253245 |    0 | Choudhary | AnkithChoudhary | An        |
 | Bhomraj  |  7877661867 |    0 |           | NULL            | NULL      |
 | Yogendra |  7995398225 |    0 |           | NULL            | NULL      |
 +----------+-------------+------+-----------+-----------------+-----------+
