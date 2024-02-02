@@ -1,0 +1,26 @@
+mysql> SELECT * FROM newtable;
++----------+-------------+------+-----------+----------+-----------+
+| Name     | PhoneNumber | new  | LastName  | FullName | ShortName |
++----------+-------------+------+-----------+----------+-----------+
+| Ankith   |  939025**** |    0 | Choudhary | 0        | An        |
+| Bhomraj  |  787766**** |    0 |           | NULL     | NULL      |
+| Yogendra |  799539**** |    0 |           | NULL     | NULL      |
++----------+-------------+------+-----------+----------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> UPDATE newtable
+    -> SET LastName=LCASE(LastName) Where Name='Ankith';
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM newtable;
++----------+-------------+------+-----------+----------+-----------+
+| Name     | PhoneNumber | new  | LastName  | FullName | ShortName |
++----------+-------------+------+-----------+----------+-----------+
+| Ankith   |  939025**** |    0 | choudhary | 0        | An        |
+| Bhomraj  |  787766**** |    0 |           | NULL     | NULL      |
+| Yogendra |  799539****|    0 |           | NULL     | NULL      |
++----------+-------------+------+-----------+----------+-----------+
+3 rows in set (0.00 sec)
+
+Use UCASE() for uppercase
